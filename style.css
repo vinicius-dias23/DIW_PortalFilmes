@@ -1,0 +1,207 @@
+* 
+{ 
+  box-sizing: border-box;
+  list-style:none;
+  max-width:100%;
+}
+
+.imagens-destaque {
+  display: inline;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+}
+
+.no-images {
+  width: 250px;
+  height: 320;
+}
+
+.alinhamento-cards {
+  display: inline-block;
+  background-color: #464646;
+  border-color: black;
+}
+
+.texto-sinopse {
+  color: rgb(196, 196, 196);
+}
+
+.altura-card {
+  height: 300px;
+}
+
+.scroll-sinopse {
+  overflow-y: scroll;
+}
+
+ul 
+{
+  padding:0;
+}
+
+body 
+{
+    font-family: 'Arial';
+    background-color: #9b9b9b;
+}
+
+.header-geral
+{
+  height: 150px;
+}
+
+.linha {
+  display: inline;
+}
+
+.container 
+{
+  width:800px;
+  margin:0 auto;
+  position:relative;
+}
+
+
+p 
+{
+  text-align: justify;
+}
+
+* 
+{ 
+  box-sizing: border-box;
+  list-style:none;
+  max-width:100%;
+}
+
+ul 
+{
+  padding:0;
+}
+
+body 
+{
+    font-family: 'Arial';
+}
+
+.input-group 
+{
+  padding:5px;
+}
+
+.container 
+{
+  width:800px;
+  margin:0 auto;
+  position:relative;
+}
+
+
+p 
+{
+  text-align: justify;
+}
+
+.logo 
+{
+    max-width: 110px;
+    padding: 15px;
+    margin-left: 35px;
+    margin-top: 13px;
+}
+
+header 
+{
+    background-color: rgb(65, 65, 65)
+}
+
+.nav
+{
+    position: absolute;
+    top: 40px;
+    padding-left: 170px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.nav-link{
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.nav-link:hover 
+{
+    color: rgb(185, 35, 35);
+}
+
+.row-lancamentos
+{
+    background-color: #fff;
+    text-align: justify;
+}
+
+.row-destaque
+{
+    background-color:rgb(173, 169, 169);
+}
+
+.row-destaque img 
+{
+    padding: 25px;
+}
+
+
+footer
+{
+    padding-top: 80px;
+}
+  
+h1 
+{
+    color: #000;
+    text-align: center;
+}
+  
+
+.row
+{
+      padding: 30px;
+      color: #000;
+}
+
+.footer
+{
+  text-align: center;
+  padding: 15px;
+}
+
+i
+{
+  margin-top: 1o;
+}
+
+img
+{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2
+{
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 600px){
+  .nav{
+      width: auto;
+  }
+  h1{
+      text-align: center;
+  }
+  nav{
+      position: static;
+  }
+}
+

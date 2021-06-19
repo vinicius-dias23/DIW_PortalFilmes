@@ -1,0 +1,132 @@
+<!--Desenvolvimento Portal de Filmes Vinicius Dias / Noite / Engenharia de Software - Praça da Liberdade-->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTicket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+
+<header class="header-geral">
+    <a href="index.html"><img src="img/logo.png" class="logo"></a>
+    <div class="menu">
+        <nav class="nav col-sm-12 col-md-12 col-lg-9">
+            <a class="nav-link active">Lançamentos</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link">Em destaque</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link">Avaliações</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link">Entrevistas & Making Of</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link">Novidades</a>
+            <a class="nav-link"> | </a>
+            <input style="width: 300px; padding: 10px;" type="text" id="pesquisa" placeholder="Search" />
+            <button onclick="pesquisaFilmes()" style="display: inline-block;" class="btn btn-danger">Pesquisar</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section class="row-destaque">
+        <br>
+        <div class="linha" id="tela">
+            <h1 id="destaque">Em destaque</h1>
+            <center>
+                <button onclick="carregaFilmes()" class="btn btn-danger">Filmes em Destaque</button>
+            </center>
+            <center>
+                <img src="img/no-image.png">            
+                <img src="img/no-image.png">
+                <img src="img/no-image.png">
+                <img src="img/no-image.png">
+            </center>         
+        </div>
+    </section>
+    <section class="row-lancamentos">
+        <div class="container">
+            <h1 id="lancamentos">Lançamentos</h1> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row col-sm-12 col-md-12 col-lg-6">
+                        <iframe width="600" height="400"
+                            src="https://www.youtube.com/embed/o2AsIXSh2xo"></iframe>
+                    </div>
+                    <div class="row col-sm-12 col-md-6 col-lg-6"></div>
+                    <h2>Bird Box</h2>
+                    <p><b>Sinopse:</b> Bird Box é ambientada em um mundo tomado por insanidade. No livro, narra-se eventos inexplicáveis que desencadeiam um impulso violento e incontrolável nas pessoas fazendo-as cometer suicídio. Ninguém é imune e ninguém sabe o que provoca essa reação nas pessoas, e isso é o que leva um apocalipse iminente. Cinco anos depois do surto ter começado, restaram poucos sobreviventes, entre eles Malorie e seus dois filhos pequenos. Ela sonha em fugir para um local onde sua família possa ficar em segurança, mas a viagem que tem pela frente é assustadora - uma decisão errada e eles poderão morrer. </p>
+                    <p><b>Direção:</b> Susanne Bier</p>
+                    <p><b>Roteiro:</b> Josh Malerman </p>
+                    <p><b>Estreia:</b> 2018 </p>
+                    <p><b>Elenco:</b> Sarah Paulson, Trevante Rhodes, John Malkovich, Rosa Salazar </p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="row-avaliacoes">
+        <div class="container">
+            <h1 id="avaliacoes">Últimas Avaliações</h1>
+            <div class="linha">
+                <h4> <b> Suellen V. </b> </h4>
+                <p> <b>Avaliação: </b> Foi uma das minhas leituras preferidas de 2018, o filme está muito bom, apesar de terem sido feitas mudanças perceptíveis em relação ao livro, porém não estraga a experiência e a adaptação ficou ótima. Com destaque para as atuações, em especial a da Sandra Bullock que sempre se entrega para seus papéis.</p>
+                <p> 21/12/2018</p>
+            
+            </div>
+            <div class="linha">
+                <h4> <b> Douglas Z.</b> </h4>
+                <p> <b>Avaliação: </b> Excelente! o filme segue bem a sequencia do livro, e te "prende" do começo ao fim. a Atuação de Sandra Bullock é impecável!</p>
+                <p> 17/01/2019 </p>
+            </div>
+            <div class="linha">
+            
+                <h4> <b> Rodrigo Vital </b> </h4>
+                <p> <b>Avaliação: </b><p> Pra mim foi apenas mais um filme que tinha tudo pra ser ótimo e que adotou a técnica de acabar sem explicar nada, ultimamente a maioria dos filmes da nisso, o filme não foi de todo ruim, a estória é muito boa, mas este coisa de não explicar nada já cansou pra mim. Focar no drama da mãe com as crianças já está batido de mais. </p>
+            </p>
+                <p> 12/05/2019 </p>
+            </div>
+        </div>
+    </section>
+    <center>
+            <h1 id="entrevistas"> Entrevistas & Making Of</h1>     
+            <p>Que conversa legal, gente! Os dois, que foram convidados a participar do evento para divulgar uma das mais novas produções da Netflix, o drama Bird Box, fizeram a maior zoeira!
+
+                Como o foco da entrevista foi justamente o longa, já disponível na plataforma desde o último dia 14 de dezembro, a gente quis saber: ela vai encarar mais um filme de suspense na sequência? Será que rola fazer uma série de TV?
+                
+                A atriz nos respondeu tudo isso e mais! Enquanto a entrevista não começava, rolaram alguns episódios bem divertidos, pra gente ter a certeza de que Sandra Bullock é uma das pessoas mais legais do universo hahahaha</p>
+    </center>
+    <center>         
+        <h1 id="novidades"> Novidades </h1>          
+        <p>Reunião de Família - Parte 3 (5 de Abril) <br>
+            4 Contra o Apocalipse: Feliz Apocalipse Para Você (6 de Abril)<br>
+            Mighty Express - Temporada 3 (13 de Abril)<br>
+            Velozes & Furiosos: Espiões do Asfalto - Temporada 4: México (16 de Abril)<br>
+            A Família Mitchell e a Revolta das Máquinas (30 de Abril)<br>
+            Shrek.<br>
+            Shrek 2.<br></p>
+    </center>
+    </main>
+
+</body>
+<footer>
+    <center>
+        
+            <p> Copyright 2021 - Desenvolvimento de Interfaces Web - PUC Minas </p>
+        
+    </center>
+</footer>
+</html> 
+
+
+</body>
+
+</html>
